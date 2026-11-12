@@ -2,10 +2,13 @@ name: test
 
 on:
   workflow_dispatch:
-  pull_request:
-  push:
-    paths-ignore:
-      - 'web/**'
+# Manual only since 2026-11-12 (GitHub token incident). Triggers before:
+# on:
+#   workflow_dispatch:
+#   pull_request:
+#   push:
+#     paths-ignore:
+#       - 'web/**'
 
 jobs:
   test:
